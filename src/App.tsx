@@ -1,26 +1,74 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './estilo/output.css';
+import './estilo/tailwind.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="min-h-screen bg-custom-dark text-white flex flex-col justify-between">
+      <div className="flex flex-1">
+        <div className="w-1/4 p-4 flex flex-col items-center">
+          <div className="mb-4">
+            <img src="work.png" alt="Profile" className="w-80" />
+          </div>
+          <div className="mb-4 text-center">
+            <h2 className="text-xl font-bold mb-2">Minhas Stacks 🎯</h2>
+            <ul className="list-disc list-outside">
+              <li>REACT</li>
+              <li>TYPESCRIPT</li>
+              <li>NODE.JS</li>
+              <li>JAVASCRIPT</li>
+              <li>API-REST</li>
+              <li>MYSQL</li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-3/4 p-4">
+          <div>
+            <h2 className="text-2xl font-bold mb-2">Experiência 📶</h2>
+            <ul className="list-disc list-inside">
+              <li>NEW WAY - Service Desk</li>
+              <li>HCOSTA - Recuperador de Crédito</li>
+              <li>IMECA - Auxiliar de Almoxarifado</li>
+              <li>SERVIMED - Conferente</li>
+            </ul>
+          </div>
+          <br/>
+          <div className="mb-4">
+            <h2 className="text-2xl font-bold mb-2">Formação 🎓</h2>
+            <ul className="list-disc list-inside">
+              <li>Análise e Desenvolvimento de Sistemas (ITE)</li>
+              <li>Desenvolvedor Fullstack (SENAC)</li>
+            </ul>
+          </div>
+          <br/>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+            Valorizo a fé e a família. ‍‍‍ Acredito que o equilíbrio entre vida pessoal e profissional é fundamental para o sucesso. ⚖️
+            Meus Hobbies:
+            Tocar guitarra
+            Assistir filmes
+            Sair para comer
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        </div>
+      </div>
+      <footer className="p-4 bg-gray-800 text-white flex justify-between items-center">
+        <div>
+          <p className="text-sm">hiago.hizu@gmail.com</p>
+          <p className="text-sm">Entre em contato comigo</p>
+        </div>
+        <div className="flex space-x-4">
+          <a href="https://wa.me/+5514988365367" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/48/000000/whatsapp.png" alt="WhatsApp" className="w-6 h-6"/>
+          </a>
+          <a href="mailto:ohugodev@outlook.com">
+            <img src="https://img.icons8.com/fluent/48/000000/email.png" alt="Email" className="w-6 h-6"/>
+          </a>
+          <a href="https://github.com/hugosbss?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" className="w-6 h-6"/>
+          </a>
+        </div>
+      </footer>
     </div>
   );
-}
-
+};
+ 
 export default App;
