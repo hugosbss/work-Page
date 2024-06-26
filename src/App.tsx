@@ -1,4 +1,3 @@
-import React from 'react';
 import './estilo/output.css';
 import './estilo/tailwind.css';
 
@@ -32,7 +31,7 @@ const App = () => {
               <li>SERVIMED - Conferente</li>
             </ul>
           </div>
-          <br/>
+          <br />
           <div className="mb-4">
             <h2 className="text-2xl font-bold mb-2">Formação 🎓</h2>
             <ul className="list-disc list-inside">
@@ -40,14 +39,14 @@ const App = () => {
               <li>Desenvolvedor Fullstack (SENAC)</li>
             </ul>
           </div>
-          <br/>
-        <p>
+          <br />
+          <p>
             Valorizo a fé e a família. ‍‍‍ Acredito que o equilíbrio entre vida pessoal e profissional é fundamental para o sucesso. ⚖️
             Meus Hobbies:
             Tocar guitarra
             Assistir filmes
             Sair para comer
-        </p>
+          </p>
         </div>
       </div>
       <footer className="p-4 bg-gray-800 text-white flex justify-between items-center">
@@ -65,10 +64,13 @@ const App = () => {
           <a href="https://github.com/hugosbss?tab=repositories" target="_blank" rel="noopener noreferrer">
             <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" className="w-6 h-6"/>
           </a>
+          <a href="https://www.linkedin.com/in/hugo-wg-silva23?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn" className="w-6 h-6"/>
+          </a>
         </div>
       </footer>
     </div>
   );
 };
- 
+
 export default App;
